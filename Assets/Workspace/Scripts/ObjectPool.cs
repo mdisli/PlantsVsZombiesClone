@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
-using Sirenix.OdinInspector;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Workspace.Scripts
@@ -53,7 +50,7 @@ namespace Workspace.Scripts
             {
                 for (int i = 0; i < variable.poolCount; i++)
                 {
-                    var obj = Instantiate(variable.objectPrefab, Vector3.zero, quaternion.identity, parent);
+                    var obj = Instantiate(variable.objectPrefab, Vector3.zero, Quaternion.identity, parent);
                     variable.poolList.Add(obj);
                     obj.SetActive(false);
                 }
@@ -71,7 +68,7 @@ namespace Workspace.Scripts
                 var variable = defItems[index];
                 for (int i = 0; i < variable.poolCount; i++)
                 {
-                    var obj = Instantiate(variable.objectPrefab, Vector3.zero, quaternion.identity, defItemParent);
+                    var obj = Instantiate(variable.objectPrefab, Vector3.zero, Quaternion.identity, defItemParent);
                     variable.poolList.Add(obj);
                     obj.SetActive(false);
                 }
@@ -114,7 +111,7 @@ namespace Workspace.Scripts
             {
                 for (int i = 0; i < bulletItem.poolCount; i++)
                 {
-                    var obj = Instantiate(bulletItem.objectPrefab, Vector3.zero, quaternion.identity, bulletItemParent);
+                    var obj = Instantiate(bulletItem.objectPrefab, Vector3.zero, Quaternion.identity, bulletItemParent);
                     bulletItem.poolList.Add(obj);
                     obj.SetActive(false);
                 }

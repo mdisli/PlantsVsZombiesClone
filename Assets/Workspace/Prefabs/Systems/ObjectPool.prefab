@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1424821830997737938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424821830997737939}
+  - component: {fileID: 1424821830997737940}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1424821830997737939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424821830997737938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424821830997737940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424821830997737938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3283490de5a849288928e47df7931a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defItems:
+  - objectPrefab: {fileID: 4188527834603950881, guid: 244943005410e4de3b67be44d56f52cc, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 21300000, guid: 4a47b01c30bde450f93c2b1e601c9986, type: 3}
+  - objectPrefab: {fileID: 4188527834603950881, guid: 00a9b449d52d840b383d18ca86ffc36d, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 21300000, guid: 4a47b01c30bde450f93c2b1e601c9986, type: 3}
+  - objectPrefab: {fileID: 4188527834603950881, guid: 52138672b13d7451eac367a116ef2100, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 21300000, guid: 4a47b01c30bde450f93c2b1e601c9986, type: 3}
+  enemyItems:
+  - objectPrefab: {fileID: 2134139145613603863, guid: f77a141f8eef84c71852d15e98481bda, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 0}
+  - objectPrefab: {fileID: 2134139145613603863, guid: fbc9fc9b05e4d4cd5a9e55ecdd1e31e9, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 0}
+  - objectPrefab: {fileID: 2134139145613603863, guid: 1be3fe565cd4f4bcfb534acb740511d6, type: 3}
+    poolCount: 10
+    poolList: []
+    itemIcon: {fileID: 0}
+  bulletItems:
+  - objectPrefab: {fileID: 7377678931116557106, guid: 11e98cc1a41f940c080cc4f4a6dca986, type: 3}
+    poolCount: 15
+    poolList: []
+    itemIcon: {fileID: 0}
+  defItemParent: {fileID: 0}
+  enemyItemParent: {fileID: 0}
+  bulletItemParent: {fileID: 0}
